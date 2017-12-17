@@ -2,6 +2,7 @@
 #define __LOGIN_SCENE_H__
 
 #include "cocos2d.h"
+#include "ui\CocosGUI.h"
 
 class LoginScene : public cocos2d::Scene
 {
@@ -9,12 +10,22 @@ public:
     static cocos2d::Scene* createScene();
 
     virtual bool init();
-    
-    // a selector callback
-    //void menuCloseCallback(cocos2d::Ref* pSender);
-    
-    // implement the "static create()" method manually
     CREATE_FUNC(LoginScene);
+
+protected:
+	cocos2d::Node* rootNode;
+	cocos2d::ui::TextField* txt_username;
+	cocos2d::ui::TextField* txt_password;
+	cocos2d::ui::Button* btn_gg_login;
+	cocos2d::ui::Button* btn_fb_login;
+	cocos2d::ui::Button* btn_register;
+	cocos2d::ui::Button* btn_getpass;
+	
+	void RegisterAccount();
+	void GetPasswordAccount();
+	void EnableAllButton();
+	void DisableAllButton();
+
 };
 
 #endif // __LOGIN_SCENE_H__
