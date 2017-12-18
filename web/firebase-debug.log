@@ -1,0 +1,39 @@
+[debug] [2017-12-17T17:02:24.660Z] ----------------------------------------------------------------------
+[debug] [2017-12-17T17:02:24.663Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\NgocTran\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-12-17T17:02:24.663Z] CLI Version:   3.16.0
+[debug] [2017-12-17T17:02:24.663Z] Platform:      win32
+[debug] [2017-12-17T17:02:24.663Z] Node Version:  v8.9.1
+[debug] [2017-12-17T17:02:24.664Z] Time:          Mon Dec 18 2017 00:02:24 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-17T17:02:24.664Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-17T17:02:24.677Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-17T17:02:24.677Z] > authorizing via signed-in user
+[debug] [2017-12-17T17:02:24.680Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/quickchat-328af  
+  
+ Mon Dec 18 2017 00:02:24 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-17T17:02:25.741Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-17T17:02:25.744Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/quickchat-328af/tokens  
+  
+ Mon Dec 18 2017 00:02:25 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-17T17:03:17.935Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\NgocTran\Desktop\chat-app-with-firebase\web'...
+[info] 
+[debug] [2017-12-17T17:03:17.940Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/quickchat-328af  
+  
+ Mon Dec 18 2017 00:03:17 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-17T17:03:19.567Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-17T17:03:19.569Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1020261149865/clients/_:getWebAppConfig  
+  
+ Mon Dec 18 2017 00:03:19 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-12-17T17:03:20.983Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-17T17:03:21.243Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Users\NgocTran\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\hosting.js:34:18)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Server.emit (events.js:208:7)
+    at emitListeningNT (net.js:1378:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
