@@ -275,7 +275,8 @@ E:/chat-app-with-firebase/mobile/proj.android-studio/app/obj/local/armeabi/objs/
   E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../cocos2d/cocos/3d/..\ui/UIEditBox/UIEditBox.h \
   E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../cocos2d/cocos/3d/..\ui/UILayoutComponent.h \
   E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../cocos2d/cocos/3d/..\ui/UITabControl.h \
-  E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../cocos2d/cocos/3d/..\editor-support/cocostudio/CocosStudioExtension.h
+  E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../cocos2d/cocos/3d/..\editor-support/cocostudio/CocosStudioExtension.h \
+  E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../Libs/firebase_cpp_sdk/include\firebase/app.h
 
 E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../Classes/AppDelegate.h:
 
@@ -828,3 +829,5 @@ E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../cocos2d/co
 E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../cocos2d/cocos/3d/..\ui/UITabControl.h:
 
 E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../cocos2d/cocos/3d/..\editor-support/cocostudio/CocosStudioExtension.h:
+
+E:/chat-app-with-firebase/mobile/proj.android-studio/app/jni/../../../Libs/firebase_cpp_sdk/include\firebase/app.h:

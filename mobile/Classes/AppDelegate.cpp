@@ -1,6 +1,13 @@
 #include "AppDelegate.h"
 #include "LoginScene.h"
 
+#include "firebase/app.h"
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#include <jni.h>
+#include "platform/android/jni/JniHelper.h"
+#endif
+
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
 
@@ -92,6 +99,20 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     register_all_packages();
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+	CCLOG("Initializing Firebase for Android.");
+	firebase::App::Create(firebase::AppOptions(), JniHelper::getEnv(),
+		JniHelper::getActivity());
+#elif (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+	CCLOG("Initializing Firebase for iOS.");
+	firebase::App::Create(firebase::AppOptions());
+#else
+	CCLOG("Initializing Firebase for Desktop.");
+	CCLOG("Note: Functions in the Firebase C++ desktop API are stubs, and are "
+		"provided for convenience only.");
+	firebase::App::Create(firebase::AppOptions());
+#endif
 
     // create a scene. it's an autorelease object
     auto scene = LoginScene::createScene();

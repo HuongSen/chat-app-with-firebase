@@ -13,6 +13,8 @@ public:
     CREATE_FUNC(LoginScene);
 
 protected:
+	float m_scale;
+
 	cocos2d::Node* rootNode;
 	cocos2d::ui::TextField* txt_username;
 	cocos2d::ui::TextField* txt_password;
@@ -20,6 +22,7 @@ protected:
 	cocos2d::ui::Button* btn_fb_login;
 	cocos2d::ui::Button* btn_register;
 	cocos2d::ui::Button* btn_getpass;
+	cocos2d::ui::Button* btn_login;
 	
 	void RegisterAccount();
 	void GetPasswordAccount();
