@@ -1,0 +1,95 @@
+body{
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 100% 720px;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #CFE963),color-stop(0.7, #029CC2));
+
+}
+
+.container{
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  background-color: rgba(35, 110, 178,0.3);
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top:  150px;
+  margin-bottom: 150px;
+}
+.container img{
+  width: 200px;
+  height: 200px;
+  margin-top: -130px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+}
+input[type="text"], input[type="password"]{
+  height: 45px;
+  width: 300px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 30px;
+}
+/*.form-input::before{
+  content: "\f007";
+  position: absolute;
+  font-family: "FontAwesome";
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 35px;
+}*/
+
+.creat-acount{
+  color: #fff;
+  width: 225px;
+  height: 30px;
+  float: left;
+  margin-top: -30px;
+}
+.forgot-password{
+  color: #fff;
+  width: 225px;
+  height: 30px;
+  float: right;
+  margin-top: -30px;
+}
+
+.btn-login{
+  width: 330px;
+  margin-top: 20px;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #236EB2;
+  border-bottom: 1px solid #fff;
+}
+.btn-login-facebook{
+  width: 150px;
+  float: left;
+  margin-left: 60px;
+  padding: 10px 0;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #0066ff;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+    font-size: 14px;
+}
+
+.btn-login-google{
+  width: 150px;
+  float: right;
+  margin-right: 60px;
+  padding: 10px 0;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #ff0000;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  font-size: 14px;
+}
