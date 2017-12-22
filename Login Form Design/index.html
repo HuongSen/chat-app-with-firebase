@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div class="loginbox" style="width: 40%">
+    <img src="avatar.jpg" class="avatar">
+        <h1>Login Here</h1>
+        <form name="loginform">
+            <p>Username</p>
+            <input type="text" name="username" placeholder=" Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder=" Password">
+            <input type="button" style="color: #04B404" name="" value="Login" onclick="check(this.form)" /> <br>
+            <a href="./display/password.html" style="color: #fff">Forgot your password?</a><br>
+            <a href="./display/dangki.html" style="color: #fff">Creat a new account?</a><br>
+        </form>
+        
+    </div>
+    <script language="javascript">
+        function check(form)
+        {
+        
+            if(form.username.value == "hoanghung@gmail.com" && form.password.value == "123456")
+        {
+                 window.open('target.html')
+        }
+             else
+        {
+            alert("Error Password or Username")
+        }
+        }
+</script>
+
+</body>
+</head>
+</html>
